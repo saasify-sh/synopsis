@@ -45,6 +45,8 @@ which outputs:
 
 ## Metrics
 
+Set `debug` to `true` to view the full metrics for the top sentences which will give you a better understanding of why certain sentences were deemed more important by the algorithm.
+
 - tfidf overlap for base relative sentence importance
 - html node boosts for tags like `<h1>` and `<strong>`
 - listicle boosts for lists like `2) second item`
