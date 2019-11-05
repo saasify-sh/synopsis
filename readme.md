@@ -52,7 +52,6 @@ http POST \
 ### The Onion Example 2
 
 *Input:* ([article](https://local.theonion.com/plan-to-get-laid-at-dragoncon-2001-fails-1819566152))
-*Input:*
 ```bash
 http POST \
   'https://api.saasify.sh/1/call/dev/automagical-summarization/summarize' \
