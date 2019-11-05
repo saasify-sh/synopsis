@@ -109,10 +109,11 @@ export default async function summarize(
   }
 
   const result = await (summarizeImpl(opts) as Promise<SummarizationResult>)
+  // console.log(JSON.stringify(result, null, 2))
 
   if (debug) {
     return result
   } else {
-    return result.abstractive
+    return result.abstractive || result.extractive
   }
 }

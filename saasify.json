@@ -8,31 +8,69 @@
           "name": "The Onion 1",
           "input": {
             "url": "https://www.theonion.com/fun-toy-banned-because-of-three-stupid-dead-kids-1819565691"
-          }
+          },
+          "output": [
+            "Fun Toy Banned Because Of Three Stupid Dead Kids",
+            "So now we have to do a full recall and halt production on what was a really awesome toy.",
+            "But now I'll never see it again, all because three stupid idiots had to go and wreck everything.\"",
+            "\"She thought the broken shards were candy.",
+            "That's what you'd assume after breaking a plastic, inedible toy, right?",
+            "\"I considered this for a while, but then I decided no. No way.",
+            "If you're 11 years old, you should know that it's impossible to fly.",
+            "And poor Wizco's probably going to go bankrupt because of this shit."
+          ]
         },
         {
           "name": "The Onion 2",
           "input": {
             "url": "https://local.theonion.com/plan-to-get-laid-at-dragoncon-2001-fails-1819566152"
-          }
+          },
+          "output": [
+            "Plan To Get Laid At DragonCon 2001 Fails",
+            "\"I know a lot of girls online, but that's not really the same,\" Melcher said.",
+            "\"I imagined some girl and I talking about the new Lord Of The Rings movie,\" Melcher said.",
+            "\"I guess girls aren't into dragons and superheroes as much as guys are,\" Melcher said.",
+            "\"Andy and I went to this Sailor Moon thing because we knew girls would be there,\" Melcher said.",
+            "\"Make no mistake—we do not like Sailor Moon.",
+            "The women, however, were only interested in talking about Sailor Moon.",
+            "\"This one girl asked me if I wrote fan fiction, and I said yes,\" Melcher said.",
+            "The following night, Melcher attended a party he had heard about in an online chat room."
+          ]
         },
         {
           "name": "The Onion 3",
           "input": {
             "url": "https://www.theonion.com/everyone-involved-in-pizzas-preparation-delivery-purc-1819564897"
-          }
-        },
-        {
-          "name": "The Onion 4",
-          "input": {
-            "url": "https://www.theonion.com/everyone-involved-in-pizzas-preparation-delivery-purc-1819564897"
-          }
+          },
+          "output": [
+            "Everyone Involved In Pizza's Preparation, Delivery, Buy Extremely High",
+            "After taking the order, Lindeman relayed it to co-worker and fellow stoner Greg Kanner.",
+            "At 1 a.m. Monday, the pizza came into material being for the first time.",
+            "\"After all, it's just pizza, right?",
+            "Also, Bickell and Wang had forgotten to include their apartment number with the order.",
+            "Fuck!\" Behr later described the prolonged Blount Street search as \"a serious fucking hassle.\"",
+            "\"They were seriously bitching me out,\" said Lindeman, who was royally baked at the time.",
+            "\"I was like, 'Dude, just chill, your pizza will be there any sec.'\"",
+            "Finally, at 3:10 a.m., more than three hours after the order was placed, the pizza reached its destination."
+          ]
         },
         {
           "name": "Wait But Why",
           "input": {
             "url": "https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html"
-          }
+          },
+          "output": [
+            "The AI Revolution: The Road to Superintelligence",
+            "The Far Future—Coming Soon",
+            "The Road to Superintelligence",
+            "What Is AI?",
+            "Where We Are Now—A World Running on ANI",
+            "The Road From ANI to AGI",
+            "Plagiarize the brain.",
+            "Try to make evolution do what it did before but for us this time.",
+            "Make this whole thing the computer’s problem, not ours.",
+            "All This Could Happen Soon"
+          ]
         }
       ]
     }
@@ -57,27 +95,27 @@
       {
         "name": "AI Web Extraction",
         "desc": "Our AI powered engine extracts the main content from any website with ease.",
-        "icon": "media/ai.svg"
+        "icon": "media/icons/ai.svg"
       },
       {
         "name": "Summarization",
         "desc": "Easily summarize the main content of any website via URL, raw text, or HTML.",
-        "icon": "media/body.svg"
+        "icon": "media/icons/body.svg"
       },
       {
         "name": "Get Going Fast",
         "desc": "Try out the REST API for FREE and then sign up with your GitHub account and Stripe.",
-        "icon": "media/developer_activity.svg"
+        "icon": "media/icons/developer_activity.svg"
       },
       {
         "name": "Cost Effective",
         "desc": "Building on top of serverless functions means you'll only pay for the API calls you actually use.",
-        "icon": "media/stripe.svg"
+        "icon": "media/icons/stripe.svg"
       },
       {
         "name": "Open Source",
         "desc": "Check out the source on GitHub!",
-        "icon": "media/code_review.svg"
+        "icon": "media/icons/code_review.svg"
       }
     ]
   }

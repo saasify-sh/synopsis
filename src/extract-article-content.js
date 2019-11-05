@@ -36,7 +36,7 @@ module.exports = async (url) => {
     .map(phrase => phrase.label)
 
   content.externalIds = { diffbot: content.diffbotUri }
-  console.log(JSON.stringify(content, null, 2))
+  // console.log(JSON.stringify(content, null, 2))
   return content
 }
 

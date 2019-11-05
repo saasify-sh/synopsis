@@ -22,6 +22,7 @@ exports.article = pCache(async (url) => {
     qs: {
       token: process.env.DIFFBOT_TOKEN,
       url,
+      norender: true,
       discussion: false,
       paging: false
     }
