@@ -199,7 +199,8 @@
   },
   "saas": {
     "name": "Automagical Summarization",
-    "heading": "**Automagical** Summarization",
+    "heading": "**Summarize articles automagically.**",
+    "subheading": "AI-powered content extraction and summarization for webpages and articles.",
     "repo": "https://github.com/saasify-sh/automagical-summarization",
     "logo": "./media/logo.svg",
     "favicon": "./media/favicon.ico",
@@ -231,7 +232,13 @@
       }
     ],
     "theme": {
-      "name": "waves"
+      "name": "waves",
+      "backgroundImage": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80",
+      "buttonStyle": "rounded",
+      "color": "#2097e2",
+      "wave": false,
+      "gradientDark": false,
+      "codeBlockDark": true
     }
   }
 }
