@@ -1,4 +1,4 @@
-# automagical-summarization
+# synopsis
 
 > Automagical AI-powered summarization for webpages and articles hosted by [Saasify](https://saasify.sh).
 
@@ -17,7 +17,7 @@ The following examples all use [HTTPie](https://httpie.org/), a more intuitive v
 *Input:* ([article](https://www.theonion.com/fun-toy-banned-because-of-three-stupid-dead-kids-1819565691))
 ```bash
 http POST \
-  'https://api.saasify.sh/1/call/dev/automagical-summarization/summarize' \
+  'https://api.saasify.sh/1/call/dev/synopsis/summarize' \
   'url=https://www.theonion.com/fun-toy-banned-because-of-three-stupid-dead-kids-1819565691'
 ```
 
@@ -35,14 +35,14 @@ http POST \
 ]
 ```
 
-<img src="https://raw.githubusercontent.com/saasify-sh/automagical-summarization/master/media/articles/the-onion-1.jpg" width="256" />
+<img src="https://raw.githubusercontent.com/saasify-sh/synopsis/master/media/articles/the-onion-1.jpg" width="256" />
 
 ### The Onion Example 2
 
 *Input:* ([article](https://local.theonion.com/plan-to-get-laid-at-dragoncon-2001-fails-1819566152))
 ```bash
 http POST \
-  'https://api.saasify.sh/1/call/dev/automagical-summarization/summarize' \
+  'https://api.saasify.sh/1/call/dev/synopsis/summarize' \
   'url=https://local.theonion.com/plan-to-get-laid-at-dragoncon-2001-fails-1819566152'
 ```
 
@@ -61,14 +61,14 @@ http POST \
 ]
 ```
 
-<img src="https://raw.githubusercontent.com/saasify-sh/automagical-summarization/master/media/articles/the-onion-2.jpg" width="256" />
+<img src="https://raw.githubusercontent.com/saasify-sh/synopsis/master/media/articles/the-onion-2.jpg" width="256" />
 
 ### The Onion Example 3
 
 *Input:* ([article](https://www.theonion.com/everyone-involved-in-pizzas-preparation-delivery-purc-1819564897))
 ```bash
 http POST \
-  'https://api.saasify.sh/1/call/dev/automagical-summarization/summarize' \
+  'https://api.saasify.sh/1/call/dev/synopsis/summarize' \
   'url=https://www.theonion.com/everyone-involved-in-pizzas-preparation-delivery-purc-1819564897'
 ```
 
@@ -87,14 +87,14 @@ http POST \
 ]
 ```
 
-<img src="https://raw.githubusercontent.com/saasify-sh/automagical-summarization/master/media/articles/the-onion-3.jpg" height="130" />
+<img src="https://raw.githubusercontent.com/saasify-sh/synopsis/master/media/articles/the-onion-3.jpg" height="130" />
 
 ### Wait But Why Example
 
 *Input:* ([article](https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html))
 ```bash
 http POST \
-  'https://api.saasify.sh/1/call/dev/automagical-summarization/summarize' \
+  'https://api.saasify.sh/1/call/dev/synopsis/summarize' \
   'url=https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html'
 ```
 
@@ -114,7 +114,7 @@ http POST \
 ]
 ```
 
-<img src="https://raw.githubusercontent.com/saasify-sh/automagical-summarization/master/media/articles/wait-but-why-1.png" width="256" />
+<img src="https://raw.githubusercontent.com/saasify-sh/synopsis/master/media/articles/wait-but-why-1.png" width="256" />
 
 ## Metrics
 
