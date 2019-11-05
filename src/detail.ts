@@ -1,6 +1,5 @@
 import summarizeImpl = require('text-summarization')
 import isHtml = require('is-html')
-
 import * as types from './types'
 
 const extractArticleContent = require('./extract-article-content')
@@ -10,7 +9,8 @@ const extractArticleContent = require('./extract-article-content')
  *
  * Must provide either `url` or `input`.
  *
- * returns the summary as an array of strings / sentences.
+ * Returns a more verbose description of the summary and intermediary scoring
+ * for all input content.
  *
  * @param url - Link to website to summarize.
  * @param input - Text or HTML to summarize.
@@ -23,7 +23,7 @@ const extractArticleContent = require('./extract-article-content')
  * @param minImageHeight - Optional minimum image height when considering images in HTML.
  * @param media - Whether or not to consider source media during summarization.
  */
-export default async function summarize(
+export default async function detail(
   url?: string,
   input?: string,
   title?: string,
@@ -33,14 +33,15 @@ export default async function summarize(
   minImageWidth: number = 400,
   minImageHeight: number = 300,
   media: boolean = false
-): Promise<string[]> {
+): Promise<types.SummarizationResult> {
   const opts: types.SummarizationOptions = {
     title,
     minNumSentences,
     maxNumSentences,
     minImageWidth,
     minImageHeight,
-    media
+    media,
+    detailedAll: true
   }
 
   if (url) {
@@ -62,5 +63,5 @@ export default async function summarize(
   const result = await (summarizeImpl(opts) as Promise<types.SummarizationResult>)
   // console.log(JSON.stringify(result, null, 2))
 
-  return result.abstractive || result.extractive
+  return result
 }

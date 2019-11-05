@@ -16,15 +16,16 @@ const pCache = require('p-cache')({
   max: 5000
 })
 
-exports.article = pCache(async (url) => {
+exports.article = pCache(async (url, opts = { }) => {
   return request({
     uri: '/article',
     qs: {
-      token: process.env.DIFFBOT_TOKEN,
       url,
       norender: true,
       discussion: false,
-      paging: false
+      paging: false,
+      ...opts,
+      token: process.env.DIFFBOT_TOKEN
     }
   })
 })

@@ -24,12 +24,12 @@ This project provides a hosted, SaaS version of the open source [text-summarizat
 
 The following examples all use [HTTPie](https://httpie.org/), a more intuitive version of `curl`.
 
-### The Onion 1 Example
+### The Onion Example 1
 
 *Input:* ([article](https://www.theonion.com/fun-toy-banned-because-of-three-stupid-dead-kids-1819565691))
 ```bash
 http POST \
-  'https://api.saasify.sh/1/call/dev/automagical-summarization' \
+  'https://api.saasify.sh/1/call/dev/automagical-summarization/summarize' \
   'url=https://www.theonion.com/fun-toy-banned-because-of-three-stupid-dead-kids-1819565691'
 ```
 
@@ -49,14 +49,14 @@ http POST \
 
 <img src="https://raw.githubusercontent.com/saasify-sh/automagical-summarization/master/media/articles/the-onion-1.jpg" width="256" />
 
-### The Onion 2 Example
+### The Onion Example 2
 
 *Input:* ([article](https://local.theonion.com/plan-to-get-laid-at-dragoncon-2001-fails-1819566152))
 *Input:*
 ```bash
 http POST \
-  'https://api.saasify.sh/1/call/dev/automagical-summarization' \
-  'https://local.theonion.com/plan-to-get-laid-at-dragoncon-2001-fails-1819566152'
+  'https://api.saasify.sh/1/call/dev/automagical-summarization/summarize' \
+  'url=https://local.theonion.com/plan-to-get-laid-at-dragoncon-2001-fails-1819566152'
 ```
 
 *Output:*
@@ -76,13 +76,13 @@ http POST \
 
 <img src="https://raw.githubusercontent.com/saasify-sh/automagical-summarization/master/media/articles/the-onion-2.jpg" width="256" />
 
-### The Onion 3 Example
+### The Onion Example 3
 
 *Input:* ([article](https://www.theonion.com/everyone-involved-in-pizzas-preparation-delivery-purc-1819564897))
 ```bash
 http POST \
-  'https://api.saasify.sh/1/call/dev/automagical-summarization' \
-  'https://www.theonion.com/everyone-involved-in-pizzas-preparation-delivery-purc-1819564897'
+  'https://api.saasify.sh/1/call/dev/automagical-summarization/summarize' \
+  'url=https://www.theonion.com/everyone-involved-in-pizzas-preparation-delivery-purc-1819564897'
 ```
 
 *Output:*
@@ -107,8 +107,8 @@ http POST \
 *Input:* ([article](https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html))
 ```bash
 http POST \
-  'https://api.saasify.sh/1/call/dev/automagical-summarization' \
-  'https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html'
+  'https://api.saasify.sh/1/call/dev/automagical-summarization/summarize' \
+  'url=https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html'
 ```
 
 *Output:*
@@ -127,11 +127,11 @@ http POST \
 ]
 ```
 
-<img src="https://raw.githubusercontent.com/saasify-sh/automagical-summarization/master/media/articles/wait-but-why-1.jpg" width="256" />
+<img src="https://raw.githubusercontent.com/saasify-sh/automagical-summarization/master/media/articles/wait-but-why-1.png" width="256" />
 
 ## Metrics
 
-Set `debug` to `true` to view the full metrics for the top sentences which will give you a better understanding of why certain sentences were deemed more important by the algorithm.
+Replace `/summarize` with `/detail` to see the full metrics for how the input was processed which will give you a better understanding of why certain sentences were deemed more important by the algorithm.
 
 - tfidf overlap for base relative sentence importance
 - html node boosts for tags like `<h1>` and `<strong>`

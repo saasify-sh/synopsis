@@ -3,8 +3,8 @@
 const pRetry = require('p-retry')
 const diffbot = require('./diffbot')
 
-module.exports = async (url) => {
-  const result = await module.exports.diffbot(url)
+module.exports = async (url, opts = { }) => {
+  const result = await module.exports.diffbot(url, opts)
   const content = (result.objects && result.objects[0]) || {
     url,
     title: '',
@@ -40,8 +40,8 @@ module.exports = async (url) => {
   return content
 }
 
-module.exports.diffbot = (url) => {
-  return pRetry(() => diffbot.article(url), {
+module.exports.diffbot = (url, ...rest) => {
+  return pRetry(() => diffbot.article(url, ...rest), {
     retries: 3,
     minTimeout: 1000
   })

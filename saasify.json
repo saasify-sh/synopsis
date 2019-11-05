@@ -79,7 +79,107 @@
       "src": "./src/detail.ts",
       "examples": [
         {
-          "name": "The Onion 3",
+          "name": "The Onion",
+          "input": {
+            "url": "https://www.theonion.com/everyone-involved-in-pizzas-preparation-delivery-purc-1819564897"
+          },
+          "output": {
+            "abstractive": [
+              "Everyone Involved In Pizza's Preparation, Delivery, Buy Extremely High",
+              "After taking the order, Lindeman relayed it to co-worker and fellow stoner Greg Kanner.",
+              "At 1 a.m. Monday, the pizza came into material being for the first time.",
+              "\"After all, it's just pizza, right?",
+              "Also, Bickell and Wang had forgotten to include their apartment number with the order.",
+              "Fuck!\" Behr later described the prolonged Blount Street search as \"a serious fucking hassle.\"",
+              "\"They were seriously bitching me out,\" said Lindeman, who was royally baked at the time.",
+              "\"I was like, 'Dude, just chill, your pizza will be there any sec.'\"",
+              "Finally, at 3:10 a.m., more than three hours after the order was placed, the pizza reached its destination."
+            ],
+            "extractive": [
+              "Everyone Involved In Pizza's Preparation, Delivery, Purchase Extremely High",
+              "After taking the order, Lindeman relayed it to co-worker and fellow stoner Greg Kanner.",
+              "At 1 a.m. Monday, the pizza came into material being for the first time.",
+              "\"After all, it's just pizza, right?",
+              "Also, Bickell and Wang had forgotten to include their apartment number with the order.",
+              "Fuck!\" Behr later described the prolonged Blount Street search as \"a serious fucking hassle.\"",
+              "\"They were seriously bitching me out,\" said Lindeman, who was royally baked at the time.",
+              "\"I was like, 'Dude, just chill, your pizza will be there any sec.'\"",
+              "Finally, at 3:10 a.m., more than three hours after the order was placed, the pizza reached its destination."
+            ],
+            "items": [
+              {
+                "attributionScore": 0,
+                "index": 15,
+                "liScore": 0,
+                "nodeScore": 0,
+                "readabilityScore": 0,
+                "score": 1.654280061927763,
+                "sentence": {
+                  "actual": "At 1 a.m. Monday, the pizza came into material being for the first time.",
+                  "normalized": "at 1 am monday the pizza came into material being for the first time",
+                  "original": "At 1 a.m. Monday, the pizza came into material being for the first time.",
+                  "tokenized": [
+                    "monday",
+                    "pizza",
+                    "material",
+                    "time"
+                  ]
+                },
+                "tfidfScore": 1.654280061927763
+              },
+              {
+                "attributionScore": 0,
+                "index": 30,
+                "liScore": 0,
+                "nodeScore": 0,
+                "readabilityScore": 0,
+                "score": 1.2745709393696703,
+                "sentence": {
+                  "actual": "\"I was like, 'Dude, just chill, your pizza will be there any sec.'\"",
+                  "normalized": "\"i was like dude just chill your pizza will be there any sec\"",
+                  "original": "\"I was like, 'Dude, just chill, your pizza will be there any sec.'\"",
+                  "tokenized": [
+                    "dude",
+                    "chill",
+                    "pizza",
+                    "sec"
+                  ]
+                },
+                "tfidfScore": 1.2745709393696703
+              },
+              {
+                "attributionScore": 0,
+                "index": 31,
+                "liScore": 0,
+                "nodeScore": 0,
+                "readabilityScore": -1.125,
+                "score": 0.4834628209392444,
+                "sentence": {
+                  "actual": "Finally, at 3:10 a.m., more than three hours after the order was placed, the pizza reached its destination.",
+                  "normalized": "finally at 3:10 am more than three hours after the order was placed the pizza reached its destination",
+                  "original": "Finally, at 3:10 a.m., more than three hours after the order was placed, the pizza reached its destination.",
+                  "tokenized": [
+                    "finally",
+                    "10",
+                    "hours",
+                    "order",
+                    "pizza",
+                    "reached",
+                    "destination"
+                  ]
+                },
+                "tfidfScore": 1.6084628209392444
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "src": "./src/extract.ts",
+      "examples": [
+        {
+          "name": "The Onion",
           "input": {
             "url": "https://www.theonion.com/everyone-involved-in-pizzas-preparation-delivery-purc-1819564897"
           }
@@ -87,7 +187,7 @@
       ]
     }
   ],
-  "amountPerBase": 800,
+  "amountPerBase": 1000,
   "amountPerRequest": 50,
   "noAuthRateLimit": {
     "requests": true,
@@ -99,7 +199,7 @@
   },
   "saas": {
     "name": "Automagical Summarization",
-    "heading": "Automagical Summarization",
+    "heading": "**Automagical** Summarization",
     "repo": "https://github.com/saasify-sh/automagical-summarization",
     "logo": "./media/logo.svg",
     "favicon": "./media/favicon.ico",
@@ -129,6 +229,9 @@
         "desc": "Check out the source on GitHub!",
         "icon": "media/icons/code_review.svg"
       }
-    ]
+    ],
+    "theme": {
+      "name": "waves"
+    }
   }
 }
