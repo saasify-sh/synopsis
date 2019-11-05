@@ -1,6 +1,6 @@
 {
   "name": "automagical-summarization",
-  "description": "AI-powered content extraction and summarization for websites and text.",
+  "description": "AI-powered content extraction and summarization for webpages and articles.",
   "services": [
     {
       "src": "./src/summarize.ts",

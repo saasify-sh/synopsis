@@ -2,7 +2,7 @@
   "name": "automagical-summarization",
   "private": true,
   "version": "0.1.0",
-  "description": "Automagical AI-powered summarization for websites and text.",
+  "description": "Automagical AI-powered summarization for webpages and articles.",
   "author": "Saasify <dev@saasify.sh>",
   "license": "MIT",
   "repository": "https://github.com/saasify-sh/automagical-summarization",

@@ -1,7 +1,7 @@
 const extractArticleContent = require('./extract-article-content')
 
 /**
- * Extracts the main article content from a website, in addition to lots of useful metadata.
+ * Extracts the main article content from a webpage or article, in addition to lots of useful metadata.
  *
  * @param url - Link to website to process.
  * @param norender - Enablers or disables higher quality rendering of the website. `norender` is on by default for performance reasons.
