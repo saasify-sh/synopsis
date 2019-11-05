@@ -1,6 +1,6 @@
 # automagical-summarization
 
-> Powerful AI-powered summarization for websites and text hosted by [Saasify](https://saasify.sh).
+> Automagical AI-powered summarization for websites and text hosted by [Saasify](https://saasify.sh).
 
 This project provides a hosted, SaaS version of the open source [text-summarization](https://github.com/transitive-bullshit/text-summarization) module by [Automagical](https://automagical.ai), which was [acquired by Verblio in 2018](https://www.verblio.com/blog/we-bought-a-company).
 

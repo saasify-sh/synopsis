@@ -1,5 +1,6 @@
 {
   "name": "automagical-summarization",
+  "description": "AI-powered content extraction and summarization for websites and text.",
   "services": [
     {
       "src": "./src/summarize.ts",
@@ -71,6 +72,17 @@
             "Make this whole thing the computer’s problem, not ours.",
             "All This Could Happen Soon"
           ]
+        }
+      ]
+    },
+    {
+      "src": "./src/detail.ts",
+      "examples": [
+        {
+          "name": "The Onion 3",
+          "input": {
+            "url": "https://www.theonion.com/everyone-involved-in-pizzas-preparation-delivery-purc-1819564897"
+          }
         }
       ]
     }

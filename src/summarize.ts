@@ -1,57 +1,16 @@
 import summarizeImpl = require('text-summarization')
 import isHtml = require('is-html')
 
+import * as types from './types'
+
 const extractArticleContent = require('./extract-article-content')
 
-interface SummarizationSentence {
-  original: string
-  listItem: number
-  actual: string
-  normalized: string
-  tokenized: string[]
-}
-
-interface SummarizationItem {
-  index: number
-  sentence: SummarizationSentence[]
-  liScore: number
-  nodeScore: number
-  readabilityScore: number
-  attributionScore: number
-  tfidfScore: number
-  score: number
-}
-
-interface SummarizationOptions {
-  html?: string
-  text?: string
-  title?: string
-  minNumSentences?: number
-  maxNumSentences?: number
-  minImageWidth?: number
-  minImageHeight?: number
-  media?: boolean
-  detailedAll?: boolean
-}
-
-interface SummarizationResult {
-  title: string
-
-  extractive: string[]
-  abstractive?: string[]
-
-  topItems?: SummarizationItem[]
-  items?: SummarizationItem[]
-}
-
 /**
- * Summarizes the given `input` text or HTML using a variety of signals.
+ * Summarizes the content of any `url` or `input` text.
  *
  * Must provide either `url` or `input`.
  *
- * By default, returns the summary as an array of strings / sentences. If you set
- * `debug` to `true`, it returns a more verbose description of the results and
- * intermediary scoring for all input sentences.
+ * returns the summary as an array of strings / sentences.
  *
  * @param url - Link to webpage to summarize.
  * @param input - Text or HTML to summarize.
@@ -63,9 +22,6 @@ interface SummarizationResult {
  * @param minImageWidth - Optional minimum image width when considering images in HTML.
  * @param minImageHeight - Optional minimum image height when considering images in HTML.
  * @param media - Whether or not to consider source media during summarization.
- * @param debug - When enabled, returns more debugging info to see how the input
- * sentences were processed and scored. Defaults to `false` and only returns the
- * abstractive summary as an array or strings.
  */
 export default async function summarize(
   url?: string,
@@ -76,10 +32,9 @@ export default async function summarize(
   maxNumSentences: number = 1000,
   minImageWidth: number = 400,
   minImageHeight: number = 300,
-  media: boolean = false,
-  debug: boolean = false
-): Promise<string[] | SummarizationResult> {
-  const opts: SummarizationOptions = {
+  media: boolean = false
+): Promise<string[]> {
+  const opts: types.SummarizationOptions = {
     title,
     minNumSentences,
     maxNumSentences,
@@ -104,16 +59,8 @@ export default async function summarize(
     throw new Error('must provide either "url" or "input" to process')
   }
 
-  if (debug) {
-    opts.detailedAll = true
-  }
-
-  const result = await (summarizeImpl(opts) as Promise<SummarizationResult>)
+  const result = await (summarizeImpl(opts) as Promise<types.SummarizationResult>)
   // console.log(JSON.stringify(result, null, 2))
 
-  if (debug) {
-    return result
-  } else {
-    return result.abstractive || result.extractive
-  }
+  return result.abstractive || result.extractive
 }
