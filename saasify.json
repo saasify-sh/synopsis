@@ -1,5 +1,5 @@
 {
-  "name": "automagical-summarization",
+  "name": "synopsis",
   "description": "AI-powered content extraction and summarization for webpages and articles.",
   "services": [
     {
@@ -198,10 +198,10 @@
     "DIFFBOT_TOKEN": "@diffbot-token"
   },
   "saas": {
-    "name": "Automagical Summarization",
+    "name": "synopsis",
     "heading": "**Summarize articles automagically.**",
     "subheading": "AI-powered content extraction and summarization for webpages and articles.",
-    "repo": "https://github.com/saasify-sh/automagical-summarization",
+    "repo": "https://github.com/saasify-sh/synopsis",
     "logo": "./media/logo.svg",
     "favicon": "./media/favicon.ico",
     "features": [
