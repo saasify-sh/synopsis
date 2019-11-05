@@ -1,11 +1,11 @@
 {
-  "name": "automagical-summarization",
+  "name": "synopsis",
   "private": true,
   "version": "0.1.0",
   "description": "Automagical AI-powered summarization for webpages and articles.",
   "author": "Saasify <dev@saasify.sh>",
   "license": "MIT",
-  "repository": "https://github.com/saasify-sh/automagical-summarization",
+  "repository": "https://github.com/saasify-sh/synopsis",
   "engines": {
     "node": ">=8"
   },
