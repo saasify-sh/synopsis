@@ -2,18 +2,6 @@
 
 > Automagical AI-powered summarization for webpages and articles hosted by [Saasify](https://saasify.sh).
 
-This project provides a hosted, SaaS version of the open source [text-summarization](https://github.com/transitive-bullshit/text-summarization) module by [Automagical](https://automagical.ai), which was [acquired by Verblio in 2018](https://www.verblio.com/blog/we-bought-a-company).
-
-<a href="https://dev_automagical-summarization.saasify.sh">
-  <img
-    src="https://badges.saasify.sh"
-    height="40"
-    alt="View Hosted API"
-  />
-</a>
-
-## Features
-
 - Uses a variety of metrics to generate quality extractive text summaries
 - Summarizes html or text content
 - Utilizes html structure as a signal of text importance
@@ -165,7 +153,3 @@ Here's an example of a sentence's internal structure after normalization, proces
   "score": 5.601944765760555
 }
 ```
-
-## License
-
-MIT © [Saasify](https://saasify.sh)
