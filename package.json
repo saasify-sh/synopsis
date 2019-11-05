@@ -1,0 +1,17 @@
+{
+  "name": "automagical-summarization",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Powerful text summarization service.",
+  "author": "Saasify <dev@saasify.sh>",
+  "license": "MIT",
+  "repository": "https://github.com/saasify-sh/automagical-summarization",
+  "engines": {
+    "node": ">=8"
+  },
+  "dependencies": {
+    "is-html": "^2.0.0",
+    "text-summarization": "^1.0.2"
+  },
+  "devDependencies": {}
+}

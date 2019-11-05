@@ -1,0 +1,13 @@
+{
+  "name": "automagical-summarization",
+  "services": [
+    {
+      "src": "index.ts"
+    }
+  ],
+  "saas": {
+    "repo": "https://github.com/saasify-sh/automagical-summarization",
+    "logo": "./media/logo.svg",
+    "favicon": "./media/favicon.ico"
+  }
+}
