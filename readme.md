@@ -24,8 +24,23 @@ This project provides a hosted, SaaS version of the open source [text-summarizat
 
 ```
 curl -X POST \
-  -H "Content-Type: multipart/form-data"
+  https://api.saasify.sh/1/call/dev/automagical-summarization \
+  -H "Content-Type: multipart/form-data" \
   -F "input=@fixtures/automagical-2.html"
+```
+
+which outputs:
+
+```json
+[
+  "So tell me, hotshot, if video is so amazing why are you feeding me this long <redacted> blog post?",
+  "When is it reasonable to want to be a phone book?",
+  "YOU’RE good at creating great written content.",
+  "You hack something together in a few hours.",
+  "But it sucks, no one engages and you swear off video as ineffective snake oil (something you’ll regret later)",
+  "You shell out money to a freelancer and they rake you over the coals for a price no person should pay for a short video.",
+  "That’s why we created Automagical."
+]
 ```
 
 ## Metrics
