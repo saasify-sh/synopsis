@@ -29,6 +29,7 @@ interface SummarizationOptions {
   minImageWidth?: number
   minImageHeight?: number
   media?: boolean
+  detailedAll?: boolean
 }
 
 interface SummarizationResult {
@@ -82,6 +83,10 @@ export default async function summarize(
     opts.html = input
   } else {
     opts.text = input
+  }
+
+  if (debug) {
+    opts.detailedAll = true
   }
 
   const result = await (summarizeImpl(opts) as Promise<SummarizationResult>)
