@@ -24,9 +24,9 @@ This project provides a hosted, SaaS version of the open source [text-summarizat
 
 ```
 curl -X POST \
-  https://api.saasify.sh/1/call/dev/automagical-summarization \
-  -H "Content-Type: multipart/form-data" \
-  -F "input=@fixtures/automagical-2.html"
+  'https://api.saasify.sh/1/call/dev/automagical-summarization' \
+  -H 'Content-Type: multipart/form-data' \
+  -F 'input=@fixtures/automagical-2.html'
 ```
 
 which outputs:
