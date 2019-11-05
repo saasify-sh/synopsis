@@ -2,14 +2,83 @@
   "name": "automagical-summarization",
   "services": [
     {
-      "src": "index.ts"
+      "src": "./src/summarize.ts",
+      "examples": [
+        {
+          "name": "The Onion 1",
+          "input": {
+            "url": "https://www.theonion.com/fun-toy-banned-because-of-three-stupid-dead-kids-1819565691"
+          }
+        },
+        {
+          "name": "The Onion 2",
+          "input": {
+            "url": "https://local.theonion.com/plan-to-get-laid-at-dragoncon-2001-fails-1819566152"
+          }
+        },
+        {
+          "name": "The Onion 3",
+          "input": {
+            "url": "https://www.theonion.com/everyone-involved-in-pizzas-preparation-delivery-purc-1819564897"
+          }
+        },
+        {
+          "name": "The Onion 4",
+          "input": {
+            "url": "https://www.theonion.com/everyone-involved-in-pizzas-preparation-delivery-purc-1819564897"
+          }
+        },
+        {
+          "name": "Wait But Why",
+          "input": {
+            "url": "https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html"
+          }
+        }
+      ]
     }
   ],
+  "amountPerBase": 800,
+  "amountPerRequest": 50,
+  "noAuthRateLimit": {
+    "requests": true,
+    "requestsInterval": 3600,
+    "requestsMaxPerInterval": 10
+  },
+  "env": {
+    "DIFFBOT_TOKEN": "@diffbot-token"
+  },
   "saas": {
     "name": "Automagical Summarization",
     "heading": "Automagical Summarization",
     "repo": "https://github.com/saasify-sh/automagical-summarization",
     "logo": "./media/logo.svg",
-    "favicon": "./media/favicon.ico"
+    "favicon": "./media/favicon.ico",
+    "features": [
+      {
+        "name": "AI Web Extraction",
+        "desc": "Our AI powered engine extracts the main content from any website with ease.",
+        "icon": "media/ai.svg"
+      },
+      {
+        "name": "Summarization",
+        "desc": "Easily summarize the main content of any website via URL, raw text, or HTML.",
+        "icon": "media/body.svg"
+      },
+      {
+        "name": "Get Going Fast",
+        "desc": "Try out the REST API for FREE and then sign up with your GitHub account and Stripe.",
+        "icon": "media/developer_activity.svg"
+      },
+      {
+        "name": "Cost Effective",
+        "desc": "Building on top of serverless functions means you'll only pay for the API calls you actually use.",
+        "icon": "media/stripe.svg"
+      },
+      {
+        "name": "Open Source",
+        "desc": "Check out the source on GitHub!",
+        "icon": "media/code_review.svg"
+      }
+    ]
   }
 }

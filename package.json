@@ -11,6 +11,10 @@
   },
   "dependencies": {
     "is-html": "^2.0.0",
+    "p-cache": "^1.0.1",
+    "p-retry": "^4.2.0",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.8",
     "text-summarization": "^1.0.2"
   },
   "devDependencies": {}

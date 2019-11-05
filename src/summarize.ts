@@ -1,6 +1,8 @@
 import summarizeImpl = require('text-summarization')
 import isHtml = require('is-html')
 
+const extractArticleContent = require('./extract-article-content')
+
 interface SummarizationSentence {
   original: string
   listItem: number
@@ -45,6 +47,13 @@ interface SummarizationResult {
 /**
  * Summarizes the given `input` text or HTML using a variety of signals.
  *
+ * Must provide either `url` or `input`.
+ *
+ * By default, returns the summary as an array of strings / sentences. If you set
+ * `debug` to `true`, it returns a more verbose description of the results and
+ * intermediary scoring for all input sentences.
+ *
+ * @param url - Link to webpage to summarize.
  * @param input - Text or HTML to summarize.
  * @param title - Title of `input` content.
  * @param numSentences - Optional number of sentences to produce. Default is to
@@ -59,7 +68,8 @@ interface SummarizationResult {
  * abstractive summary as an array or strings.
  */
 export default async function summarize(
-  input: string,
+  url?: string,
+  input?: string,
   title?: string,
   numSentences?: number,
   minNumSentences: number = 1,
@@ -78,11 +88,20 @@ export default async function summarize(
     media
   }
 
-  const isInputHtml = isHtml(input)
-  if (isInputHtml) {
-    opts.html = input
+  if (url) {
+    const article = await extractArticleContent(url)
+    opts.title = article.title
+    opts.html = article.html
+    opts.text = article.text
+  } else if (input) {
+    const isInputHtml = isHtml(input)
+    if (isInputHtml) {
+      opts.html = input
+    } else {
+      opts.text = input
+    }
   } else {
-    opts.text = input
+    throw new Error('must provide either "url" or "input" to process')
   }
 
   if (debug) {
