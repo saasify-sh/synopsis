@@ -6,6 +6,7 @@
     }
   ],
   "saas": {
+    "name": "Automagical Summarization",
     "repo": "https://github.com/saasify-sh/automagical-summarization",
     "logo": "./media/logo.svg",
     "favicon": "./media/favicon.ico"
