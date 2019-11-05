@@ -10,7 +10,7 @@ const extractArticleContent = require('./extract-article-content')
  *
  * Must provide either `url` or `input`.
  *
- * returns the summary as an array of strings / sentences.
+ * Returns the summary as an array of strings / sentences.
  *
  * @param url - Link to website to summarize.
  * @param input - Text or HTML to summarize.
