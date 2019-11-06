@@ -1,6 +1,7 @@
 {
   "name": "synopsis",
   "description": "AI-powered content extraction and summarization for webpages and articles.",
+  "alias": "synopsis",
   "services": [
     {
       "src": "./src/summarize.ts",
