@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://synopsis.saasify.sh/">
+    <img src="https://raw.githubusercontent.com/saasify-sh/synopsis/master/media/promo.jpg" width="525" />
+  </a>
+</p>
+
 # synopsis
 
 > Automagical AI-powered summarization for webpages and articles.
