@@ -1,11 +1,13 @@
 # synopsis
 
-> Automagical AI-powered summarization for webpages and articles hosted by [Saasify](https://saasify.sh).
+> Automagical AI-powered summarization for webpages and articles.
 
+- Uses state of the art AI to extract the core content of any webpage
 - Uses a variety of metrics to generate quality extractive text summaries
 - Summarizes html or text content
 - Utilizes html structure as a signal of text importance
 - Includes basic abstractive shortening of extracted sentences
+- Hosted by [Saasify](https://saasify.sh)
 - Thoroughly tested and used in production
 
 ## Examples
