@@ -8,6 +8,7 @@
       "examples": [
         {
           "name": "The Onion 1",
+          "description": "Summarizes an Onion article",
           "input": {
             "url": "https://www.theonion.com/fun-toy-banned-because-of-three-stupid-dead-kids-1819565691"
           },
@@ -24,6 +25,7 @@
         },
         {
           "name": "The Onion 2",
+          "description": "Summarizes an Onion article",
           "input": {
             "url": "https://local.theonion.com/plan-to-get-laid-at-dragoncon-2001-fails-1819566152"
           },
@@ -41,6 +43,7 @@
         },
         {
           "name": "The Onion 3",
+          "description": "Summarizes an Onion article",
           "input": {
             "url": "https://www.theonion.com/everyone-involved-in-pizzas-preparation-delivery-purc-1819564897"
           },
@@ -58,6 +61,7 @@
         },
         {
           "name": "Wait But Why",
+          "description": "Summarizes a blog post",
           "input": {
             "url": "https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html"
           },
