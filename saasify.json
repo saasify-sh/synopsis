@@ -234,7 +234,7 @@
       },
       {
         "name": "Open Source",
-        "desc": "Check out the source on GitHub!",
+        "desc": "Check out the source on [GitHub](https://github.com/saasify-sh/synopsis)!",
         "icon": "media/icons/code_review.svg"
       }
     ],
