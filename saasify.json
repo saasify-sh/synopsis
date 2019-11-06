@@ -188,7 +188,9 @@
     }
   ],
   "amountPerBase": 1000,
-  "amountPerRequest": 50,
+  "amountPerRequest": 2,
+  "amountPerCompute": 0,
+  "amountPerBandwidth": 0,
   "noAuthRateLimit": {
     "requests": true,
     "requestsInterval": 3600,
