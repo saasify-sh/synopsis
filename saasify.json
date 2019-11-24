@@ -111,7 +111,7 @@
       "buttonStyle": "rounded",
       "color": "#2097e2",
       "wave": false,
-      "gradientDark": false,
+      "gradientDark": true,
       "codeBlockDark": true
     }
   }
