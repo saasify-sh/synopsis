@@ -25,7 +25,7 @@ The following examples all use [HTTPie](https://httpie.org/), a more intuitive v
 *Input:* ([article](https://www.theonion.com/fun-toy-banned-because-of-three-stupid-dead-kids-1819565691))
 ```bash
 http POST \
-  'https://api.saasify.sh/1/call/dev/synopsis/summarize' \
+  'https://ssfy.sh/dev/synopsis/summarize' \
   'url=https://www.theonion.com/fun-toy-banned-because-of-three-stupid-dead-kids-1819565691'
 ```
 
@@ -50,7 +50,7 @@ http POST \
 *Input:* ([article](https://local.theonion.com/plan-to-get-laid-at-dragoncon-2001-fails-1819566152))
 ```bash
 http POST \
-  'https://api.saasify.sh/1/call/dev/synopsis/summarize' \
+  'https://ssfy.sh/dev/synopsis/summarize' \
   'url=https://local.theonion.com/plan-to-get-laid-at-dragoncon-2001-fails-1819566152'
 ```
 
@@ -76,7 +76,7 @@ http POST \
 *Input:* ([article](https://www.theonion.com/everyone-involved-in-pizzas-preparation-delivery-purc-1819564897))
 ```bash
 http POST \
-  'https://api.saasify.sh/1/call/dev/synopsis/summarize' \
+  'https://ssfy.sh/dev/synopsis/summarize' \
   'url=https://www.theonion.com/everyone-involved-in-pizzas-preparation-delivery-purc-1819564897'
 ```
 
@@ -102,7 +102,7 @@ http POST \
 *Input:* ([article](https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html))
 ```bash
 http POST \
-  'https://api.saasify.sh/1/call/dev/synopsis/summarize' \
+  'https://ssfy.sh/dev/synopsis/summarize' \
   'url=https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html'
 ```
 
