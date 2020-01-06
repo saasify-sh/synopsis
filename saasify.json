@@ -68,9 +68,6 @@
     "requestsInterval": 3600,
     "requestsMaxPerInterval": 10
   },
-  "env": {
-    "DIFFBOT_TOKEN": "@diffbot-token"
-  },
   "saas": {
     "name": "synopsis",
     "heading": "**Summarize articles automagically.**",
