@@ -1037,9 +1037,9 @@ keyv@^3.0.0:
     json-buffer "3.0.0"
 
 kind-of@^6.0.2:
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.2.tgz#01146b36a6218e64e58f3a8d66de5d7fc6f6d051"
-  integrity sha512-s5kLOcnH0XqDO+FvuaLX8DDjZ18CGFk7VygH40QoKPUQhW4e2rvM0rwUq0t8IQDOwYSeLK01U90OjzBTme2QqA==
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.3.tgz#07c05034a6c349fa06e24fa35aa76db4580ce4dd"
+  integrity sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==
 
 levn@~0.3.0:
   version "0.3.0"
@@ -1703,6 +1703,11 @@ quotation@^1.0.0:
 "readability@github:mozilla/readability":
   version "0.2.0"
   resolved "https://codeload.github.com/mozilla/readability/tar.gz/d6fc38c4b45d9bc337e3579b53ffa7c188cc4d77"
+
+readability@mozilla/readability:
+  version "0.2.0"
+  uid "668a3a1010baab7c717ef5f04dea682fd3c78843"
+  resolved "https://codeload.github.com/mozilla/readability/tar.gz/668a3a1010baab7c717ef5f04dea682fd3c78843"
 
 readable-stream@^3.1.1:
   version "3.4.0"
