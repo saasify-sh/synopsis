@@ -161,3 +161,5 @@ Here's an example of a sentence's internal structure after normalization, proces
   "score": 5.601944765760555
 }
 ```
+
+Support my OSS work by <a href="https://twitter.com/transitive_bs">following me on twitter <img src="https://storage.googleapis.com/saasify-assets/twitter-logo.svg" alt="twitter" height="24px" align="center"></a>
