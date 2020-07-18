@@ -1160,9 +1160,9 @@ lodash.uniqby@^4.7.0:
   integrity sha1-2ZwHpmnp5tJOE2Lf4mbGdhavEwI=
 
 lodash@^4.15.0, lodash@^4.17.15, lodash@~4.17.10, lodash@~4.17.15:
-  version "4.17.15"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
-  integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+  version "4.17.19"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
+  integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
 
 lowercase-keys@^1.0.0, lowercase-keys@^1.0.1:
   version "1.0.1"
@@ -1703,6 +1703,11 @@ quotation@^1.0.0:
 "readability@github:mozilla/readability":
   version "0.2.0"
   resolved "https://codeload.github.com/mozilla/readability/tar.gz/d6fc38c4b45d9bc337e3579b53ffa7c188cc4d77"
+
+readability@mozilla/readability:
+  version "0.2.0"
+  uid "52ab9b5c8916c306a47b2119270dcdabebf9d203"
+  resolved "https://codeload.github.com/mozilla/readability/tar.gz/52ab9b5c8916c306a47b2119270dcdabebf9d203"
 
 readable-stream@^3.1.1:
   version "3.4.0"
