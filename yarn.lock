@@ -1634,9 +1634,9 @@ pn@^1.1.0:
   integrity sha512-2qHaIQr2VLRFoxe2nASzsV6ef4yOOH+Fi9FBOVH6cqeSgUnoyySPZkxzLuzd+RYOQTRpROA0ztTMqxROKSb/nA==
 
 postcss@^7.0.5:
-  version "7.0.21"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.21.tgz#06bb07824c19c2021c5d056d5b10c35b989f7e17"
-  integrity sha512-uIFtJElxJo29QC753JzhidoAhvp/e/Exezkdhfmt8AymWT6/5B7W1WmponYWkHk2eg6sONyTch0A3nkMPun3SQ==
+  version "7.0.36"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.36.tgz#056f8cffa939662a8f5905950c07d5285644dfcb"
+  integrity sha512-BebJSIUMwJHRH0HAQoxN4u1CN86glsrwsW0q7T+/m44eXOUAxSNdHRkNZPYz5vVUbg17hFgOQDE7fZk7li3pZw==
   dependencies:
     chalk "^2.4.2"
     source-map "^0.6.1"
@@ -1703,6 +1703,11 @@ quotation@^1.0.0:
 "readability@github:mozilla/readability":
   version "0.2.0"
   resolved "https://codeload.github.com/mozilla/readability/tar.gz/d6fc38c4b45d9bc337e3579b53ffa7c188cc4d77"
+
+readability@mozilla/readability:
+  version "0.4.1"
+  uid "28843b6de84447dd6cef04058fda336938e628dc"
+  resolved "https://codeload.github.com/mozilla/readability/tar.gz/28843b6de84447dd6cef04058fda336938e628dc"
 
 readable-stream@^3.1.1:
   version "3.4.0"
